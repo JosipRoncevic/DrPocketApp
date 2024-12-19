@@ -17,7 +17,7 @@ export default function Index() {
     setResponseText("");
 
     try {
-      const apiKey = "your-cohere-api-key";
+      const apiKey = process.env.EXPO_PUBLIC_API_KEY
       const endpoint = "https://api.cohere.ai/v1/generate";
 
       const payload = {
